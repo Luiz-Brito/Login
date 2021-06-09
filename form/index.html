@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formuário</title>
+</head>
+<body>
+    
+    <form action="post.php" method="post" class="box">
+        <h1>Register</h1>
+        
+        <p></i><input type="text" name="txtNome" placeholder="Username" autocomplete="off" required></p>
+
+        <p><input type="password" name="txtSenha" placeholder="Password" required></p>
+
+        <p><input type="email" name="txtEmail" placeholder="Email" autocomplete="off" required></p>
+
+        <p>
+        <input type="radio" name="sexo" id="masc" value="Male" checked> <label for="masc">Male</label> 
+        <input type="radio" name="sexo" id="femi" value="Female"> <label for="femi">Female</label>
+        </p>
+
+        <p><select name="exp">
+            <option value="" disabled selected>Select</option>
+            <option value="Junior">Junior</option>
+            <option value="Plenor">Plenor</option>
+            <option value="Senior">Senior</option>
+        </select></p>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
